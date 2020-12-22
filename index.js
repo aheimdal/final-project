@@ -30,7 +30,7 @@ app.post("/company", async(req, res) => {
     try {
     
         /* 
-        Going to go over this to see how I can relay information and match to the corresponging company when I have to
+        Going to go over this to see how I can relay information and match to the corresponding company when I have to
         */
         
         const { company_name } = req.body;
