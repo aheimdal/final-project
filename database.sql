@@ -1,4 +1,4 @@
-CREATE DATABASE clockin_project;
+--CREATE DATABASE clockin_project;
 
 CREATE TABLE company(
     company_id SERIAL PRIMARY KEY,
