@@ -9,8 +9,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "start": "next start"
+    "build": "next build",
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
