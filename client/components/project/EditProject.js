@@ -14,8 +14,7 @@ const EditProject = ({ project }) => {
       const body = {project_company_name, project_description, project_location, project_time};
       
       // proxy
-
-      
+      //https://final-project.herokuapp.com/project
       const response = await fetch(`/project/${project.project_id}`, {
         method: "PUT",
         headers: {"Content-Type": "application/json"},
