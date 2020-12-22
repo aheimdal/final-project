@@ -12,6 +12,8 @@ const InputProject = ( ) => {
         e.preventDefault();
         try {
             const body = {project_company_name, project_description, project_location, project_time};
+            
+            //https://final-project.herokuapp.com/project
             const response = await fetch("/project",{
                 method: "POST",
                 headers: {"Content-Type": "application/json"},

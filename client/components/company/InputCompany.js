@@ -12,6 +12,7 @@ const InputCompany = () => {
         e.preventDefault();
         try {
             const body = {company_name, contact_name, company_phone, company_address, company_mail};
+            //https://final-project.herokuapp.com/project
             const response = await fetch("/company",{
                 method: "POST",
                 headers: {"Content-Type": "application/json"},

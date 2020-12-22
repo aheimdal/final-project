@@ -8,6 +8,7 @@ const ListProject = () => {
     // Delete function
     const deleteProjects = async (id) => {
         try {
+            //https://final-project.herokuapp.com/project
             const deleteProject = await fetch(`/project/${id}`, {
                 method: "DELETE"
             });
@@ -21,6 +22,7 @@ const ListProject = () => {
     const getProjects = async() => {
 
         try {
+            //https://final-project.herokuapp.com/project
             const response = await fetch("/project");
             const jsonData = await response.json();
 

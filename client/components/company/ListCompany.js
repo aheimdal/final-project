@@ -9,6 +9,7 @@ const ListCompany = () => {
     // Delete function
     const deleteCompanies = async (id) => {
         try {
+            //https://final-project.herokuapp.com/project
             const deleteProject = await fetch(`/company/${id}`, {
                 method: "DELETE"
             });
@@ -24,6 +25,7 @@ const ListCompany = () => {
     const getCompanies = async() => {
 
         try {
+            //https://final-project.herokuapp.com/project
             const response = await fetch("/company");
             const jsonData = await response.json();
 
