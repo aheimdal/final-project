@@ -27,7 +27,7 @@ const ListCompany = () => {
         try {
             // http://localhost:5000/ - run locally for testing
             //https://final-project.herokuapp.com/project
-            const response = await fetch("http://localhost:5000/company");
+            const response = await fetch("company");
             const jsonData = await response.json();
 
             setCompanies(jsonData);  

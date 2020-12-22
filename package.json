@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "start": "next start -p $PORT",
-    "heroku-postbuild": "npm run build"
+    "start": "nodemon start -p $PORT",
+    "heroku-postbuild": "cd client && npm run build"
   },
   "author": "",
   "license": "ISC",
