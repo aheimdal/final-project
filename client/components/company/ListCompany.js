@@ -10,7 +10,7 @@ const ListCompany = () => {
     const deleteCompanies = async (id) => {
         try {
             //https://final-project.herokuapp.com/project
-            const deleteProject = await fetch(`/company/${id}`, {
+            const deleteProject = await fetch(`http://localhost:5000/company/${id}`, {
                 method: "DELETE"
             });
 
@@ -26,7 +26,7 @@ const ListCompany = () => {
 
         try {
             //https://final-project.herokuapp.com/project
-            const response = await fetch("/company");
+            const response = await fetch("http://localhost:5000/company");
             const jsonData = await response.json();
 
             setCompanies(jsonData);  
