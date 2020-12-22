@@ -1,3 +1,3 @@
-# final-project
+## final-project
 
-To run app go to client and in command line use npm run dev
+To run App go to final-project/client and in command line use npm run dev
