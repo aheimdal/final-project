@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines":{
+    "node": "12.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "heroku-postbuild": "cd client && npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
