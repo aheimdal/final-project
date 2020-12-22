@@ -14,7 +14,7 @@ const EditCompany = ({ company }) => {
     try {
       const body = {company_name, contact_name, company_phone, company_address, company_mail};
       //https://final-project.herokuapp.com/company
-      const response = await fetch(`http://localhost:5000/company/${company.company_id}`, {
+      const response = await fetch(`company/${company.company_id}`, {
         method: "PUT",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(body)

@@ -9,7 +9,7 @@ const ListProject = () => {
     const deleteProjects = async (id) => {
         try {
             //https://final-project.herokuapp.com/project
-            const deleteProject = await fetch(`http://localhost:5000/project/${id}`, {
+            const deleteProject = await fetch(`project/${id}`, {
                 method: "DELETE"
             });
             setProjects(projects.filter(project => project.project_id !== id))
@@ -23,7 +23,7 @@ const ListProject = () => {
 
         try {
             //https://final-project.herokuapp.com/project
-            const response = await fetch("http://localhost:5000/project");
+            const response = await fetch("project");
             const jsonData = await response.json();
 
             setProjects(jsonData);  
