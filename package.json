@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "start": "nodemon start -p $PORT",
-    "heroku-postbuild": "cd client && npm run build"
+    "heroku-postbuild": "cd client && next build"
   },
   "author": "",
   "license": "ISC",

@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "pivate": true,
+  "engines": {
+    "npm": "6.x"
+  },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "run dev",
+    "build": "run build",
+    "start": "run start"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
