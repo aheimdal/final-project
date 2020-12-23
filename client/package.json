@@ -8,9 +8,9 @@
     "npm": "6.x"
   },
   "scripts": {
-    "dev": "run dev",
-    "build": "run build",
-    "start": "run start"
+    "dev": "npm run dev",
+    "build": "npm run build",
+    "start": "npm run start"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
