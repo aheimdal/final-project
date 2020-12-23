@@ -5,12 +5,7 @@
   "engines": {
     "npm": "6.x"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
     "next": "^10.0.3",
