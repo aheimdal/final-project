@@ -6,9 +6,10 @@
     "npm": "6.x"
   },
   "scripts": {
-    "dev": "npm run dev",
-    "build": "npm run build",
-    "start": "npm run start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
