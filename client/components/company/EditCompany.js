@@ -11,10 +11,15 @@ const EditCompany = ({ company }) => {
   // Edit Company_Company_Name
   const updateInfo = async e => {
     e.preventDefault();
+    
     try {
+      
       const body = {company_name, contact_name, company_phone, company_address, company_mail};
-      //https://final-project.herokuapp.com/company
-      const response = await fetch(`company/${company.company_id}`, {
+      
+      //proxy
+      
+      //https://final-project-clockin.herokuapp.com/company
+      const response = await fetch(`/company/${company.company_id}`, {
         method: "PUT",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(body)

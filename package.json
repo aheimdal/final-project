@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "engines":{
+    "node": "12.x",
     "npm": "6.x"
   },
   "scripts": {
-    "dev": "next dev",
-    "start": "nodemon start -p $PORT",
-    "heroku-postbuild": "cd client && npm run build"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
