@@ -5,12 +5,13 @@
   "main": "index.js",
   "pivate": true,
   "engines": {
-    "npm": "6.x"
+    "npm": "6.x",
+    "npx": "6.x"
   },
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",

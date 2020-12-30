@@ -53,6 +53,19 @@ Fyrstu skrefin í að setja inn töflu og bæta við gögnum
 
 Bæta við gögn í töflu
 
+Í þessari töflu þá erum við með:
+
+    <--- Fyrir company --->
+    INSERT INTO company (company_name, contact_name, company_phone, company_address, company_mail) values ('Gluggaþrif ehf', 'Anton H. Heimdal', '8978301', 'Mosarimi 15','heimdal1909@gmail.com');
+    INSERT INTO company (company_name, contact_name, company_phone, company_address, company_mail) values ('Smákranar ehf', 'Erlingur Erlingsson', '6994342', 'Stórihjalli xx','smakranar@smakranar.is');
+    INSERT INTO company (company_name, contact_name, company_phone, company_address, company_mail) values ('Skólahjálp ehf', 'Anton H. Heimdal', '8978301', 'Mosarimi 15','ahh30@hi.is');
+
+    <--- Fyrir project --->
+    INSERT INTO project (project_company_name, project_description, project_location, project_time) values ('Hagar', 'Þrífa gólfin', 'Hagasmári 1', '3654');
+    INSERT INTO project (project_company_name, project_description, project_location, project_time) values ('Hagar', 'Fylla á vöruhillur', 'Hagasmári 1', '3900');
+    INSERT INTO project (project_company_name, project_description, project_location, project_time) values ('Gluggaþrif', 'Þrífa rúður', 'Heima', '384');
+
+
     my-newserver::DATABASE=> INSERT INTO todo (company, description) values ('Raðgjafafyrirtæki Rafnars', 'Sql ráðgjöf');
     my-newserver::DATABASE=> SELECT * FROM todo;
     todo_id |          clock_in          |          company          | description
