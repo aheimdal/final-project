@@ -10,7 +10,7 @@ const ListCompany = () => {
     const deleteCompanies = async (id) => {
         try {
             //https://final-project-clockin.herokuapp.com/company
-            const deleteProject = await fetch(`company/${id}`, {
+            const deleteProject = await fetch(`https://final-project-clockin.herokuapp.com/company/${id}`, {
                 method: "DELETE"
             });
 
@@ -26,12 +26,12 @@ const ListCompany = () => {
 
         try {
             //https://final-project-clockin.herokuapp.com/company
-            const response = await fetch("company");
+            const response = await fetch(`https://final-project-clockin.herokuapp.com/company`);
             const jsonData = await response.json();
 
             setCompanies(jsonData);  
         } catch (err) {
-            console.error(err.message);
+            console.error("Failed");
         }
     };
 
