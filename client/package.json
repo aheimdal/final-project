@@ -9,9 +9,9 @@
     "npx": "6.x"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start -p $PORT"
+    "dev": "dev",
+    "build": "build",
+    "start": "start -p $PORT"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
