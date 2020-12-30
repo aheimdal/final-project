@@ -70,7 +70,7 @@ app.post("/project", async(req, res) => {
 //get all items
 
 // gets company list
-app.get("/company", async(req, res) => {
+app.get("/CompanyList", async(req, res) => {
     try {
         const allCompany = await pool.query("SELECT * FROM company");
         res.json(allCompany.rows);
