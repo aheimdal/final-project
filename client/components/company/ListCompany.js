@@ -26,7 +26,7 @@ const ListCompany = () => {
 
         try {
             //https://final-project-clockin.herokuapp.com/company
-            const response = await fetch(`company`);
+            const response = await fetch(`/CompanyList`);
             const jsonData = await response.json();
 
             setCompanies(jsonData);  
